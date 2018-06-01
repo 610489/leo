@@ -20,29 +20,29 @@ gcc –S XXX.i  –o XXX.s(查看XXX.s的架構)
 #組譯階段
 gcc –c XXX.s –o XXX.o(查看XXX.o的架構)
 
-# 1 "helloCTFer.c"
-# 1 "<built-in>"
-# 1 "<command-line>"
-# 31 "<command-line>"
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 32 "<command-line>" 2
-# 1 "helloCTFer.c"
-# 1 "/usr/include/stdio.h" 1 3 4
-# 27 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/features.h" 1 3 4
-# 364 "/usr/include/features.h" 3 4
-# 1 "/usr/include/i386-linux-gnu/sys/cdefs.h" 1 3 4
-# 415 "/usr/include/i386-linux-gnu/sys/cdefs.h" 3 4
-# 1 "/usr/include/i386-linux-gnu/bits/wordsize.h" 1 3 4
-# 416 "/usr/include/i386-linux-gnu/sys/cdefs.h" 2 3 4
-# 365 "/usr/include/features.h" 2 3 4
-# 388 "/usr/include/features.h" 3 4
-# 1 "/usr/include/i386-linux-gnu/gnu/stubs.h" 1 3 4
+ 1 "helloCTFer.c"
+ 1 "<built-in>"
+ 1 "<command-line>"
+ 31 "<command-line>"
+ 1 "/usr/include/stdc-predef.h" 1 3 4
+ 32 "<command-line>" 2
+ 1 "helloCTFer.c"
+ 1 "/usr/include/stdio.h" 1 3 4
+ 27 "/usr/include/stdio.h" 3 4
+ 1 "/usr/include/features.h" 1 3 4
+ 364 "/usr/include/features.h" 3 4
+ 1 "/usr/include/i386-linux-gnu/sys/cdefs.h" 1 3 4
+ 415 "/usr/include/i386-linux-gnu/sys/cdefs.h" 3 4
+ 1 "/usr/include/i386-linux-gnu/bits/wordsize.h" 1 3 4
+ 416 "/usr/include/i386-linux-gnu/sys/cdefs.h" 2 3 4
+ 365 "/usr/include/features.h" 2 3 4
+ 388 "/usr/include/features.h" 3 4
+ 1 "/usr/include/i386-linux-gnu/gnu/stubs.h" 1 3 4
 
-# 1 "/usr/include/i386-linux-gnu/gnu/stubs-32.h" 1 3 4
-# 8 "/usr/include/i386-linux-gnu/gnu/stubs.h" 2 3 4
-# 389 "/usr/include/features.h" 2 3 4
-# 28 "/usr/include/stdio.h" 2 3 4
+ 1 "/usr/include/i386-linux-gnu/gnu/stubs-32.h" 1 3 4
+ 8 "/usr/include/i386-linux-gnu/gnu/stubs.h" 2 3 4
+ 389 "/usr/include/features.h" 2 3 4
+ 28 "/usr/include/stdio.h" 2 3 4
 ……………………………….
 
 
@@ -80,29 +80,29 @@ gcc -S -masm=intel XXXXX.c -o XXXXX_intel.s
 
 gcc -S -masm=intel XXXXX.c -o XXXXX_intel_OK.s -fno-asynchronous-unwind-tables
 組譯過程
-# 1 "helloCTFer.c"
-# 1 "<built-in>"
-# 1 "<command-line>"
-# 31 "<command-line>"
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 32 "<command-line>" 2
-# 1 "helloCTFer.c"
-# 1 "/usr/include/stdio.h" 1 3 4
-# 27 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/features.h" 1 3 4
-# 364 "/usr/include/features.h" 3 4
-# 1 "/usr/include/i386-linux-gnu/sys/cdefs.h" 1 3 4
-# 415 "/usr/include/i386-linux-gnu/sys/cdefs.h" 3 4
-# 1 "/usr/include/i386-linux-gnu/bits/wordsize.h" 1 3 4
-# 416 "/usr/include/i386-linux-gnu/sys/cdefs.h" 2 3 4
-# 365 "/usr/include/features.h" 2 3 4
-# 388 "/usr/include/features.h" 3 4
-# 1 "/usr/include/i386-linux-gnu/gnu/stubs.h" 1 3 4
+ 1 "helloCTFer.c"
+ 1 "<built-in>"
+ 1 "<command-line>"
+ 31 "<command-line>"
+ 1 "/usr/include/stdc-predef.h" 1 3 4
+ 32 "<command-line>" 2
+ 1 "helloCTFer.c"
+ 1 "/usr/include/stdio.h" 1 3 4
+ 27 "/usr/include/stdio.h" 3 4
+ 1 "/usr/include/features.h" 1 3 4
+ 364 "/usr/include/features.h" 3 4
+ 1 "/usr/include/i386-linux-gnu/sys/cdefs.h" 1 3 4
+ 415 "/usr/include/i386-linux-gnu/sys/cdefs.h" 3 4
+ 1 "/usr/include/i386-linux-gnu/bits/wordsize.h" 1 3 4
+ 416 "/usr/include/i386-linux-gnu/sys/cdefs.h" 2 3 4
+ 365 "/usr/include/features.h" 2 3 4
+ 388 "/usr/include/features.h" 3 4
+ 1 "/usr/include/i386-linux-gnu/gnu/stubs.h" 1 3 4
 
-# 1 "/usr/include/i386-linux-gnu/gnu/stubs-32.h" 1 3 4
-# 8 "/usr/include/i386-linux-gnu/gnu/stubs.h" 2 3 4
-# 389 "/usr/include/features.h" 2 3 4
-# 28 "/usr/include/stdio.h" 2 3 4
+ 1 "/usr/include/i386-linux-gnu/gnu/stubs-32.h" 1 3 4
+ 8 "/usr/include/i386-linux-gnu/gnu/stubs.h" 2 3 4
+ 389 "/usr/include/features.h" 2 3 4
+ 28 "/usr/include/stdio.h" 2 3 4
 ……………………………….
 
 將組合語言程式碼轉成機器可以執行的指令(instructions)
