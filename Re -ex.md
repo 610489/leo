@@ -2,6 +2,7 @@
 
 # C程式編譯組譯與逆向(反編譯)
 # C語言程式編譯與組譯
+```
 #include <stdio.h>
 
 int main()
@@ -9,17 +10,20 @@ int main()
    printf("Hello CTFer\n ”);
    return 0;
 }
-【推薦好書】程式設計師的自我修養：連結、載入、程式庫
+```
+【推薦好書】程式設計師的自我修養：連結、載入、程式
 
-#預處理階段
+##預處理階段
+```
 
 gcc –E XXX.c –o XXX.i (查看XXX.i的架構)
 #編譯階段
 gcc –S XXX.i  –o XXX.s(查看XXX.s的架構)
+```
+##組譯階段
 
-#組譯階段
 gcc –c XXX.s –o XXX.o(查看XXX.o的架構)
-
+```
  1 "helloCTFer.c"
  1 "<built-in>"
  1 "<command-line>"
@@ -45,10 +49,10 @@ gcc –c XXX.s –o XXX.o(查看XXX.o的架構)
  28 "/usr/include/stdio.h" 2 3 4
 ……………………………….
 
+```
 
 
-
-#連結階段
+##連結階段
 gcc  XXX.o –o XXX(產生的可執行檔)
 
 
@@ -67,19 +71,8 @@ gcc  XXX.o –o XXX(產生的可執行檔)
 
 
 
-產生組語
-
-產生AT&T語法格式的組語(gcc預設使用的格式)
-
-
-gcc -S -masm=att XXXXX.c -o XXXXX_att.s
-產生Intel語法格式的組語(微軟預設使用的格式)
-
-gcc -S -masm=intel XXXXX.c -o XXXXX_intel.s
-要去掉一堆註解:請加上參數-fno-asynchronous-unwind-tables
-
-gcc -S -masm=intel XXXXX.c -o XXXXX_intel_OK.s -fno-asynchronous-unwind-tables
-組譯過程
+##組譯過程
+```
  1 "helloCTFer.c"
  1 "<built-in>"
  1 "<command-line>"
@@ -104,7 +97,7 @@ gcc -S -masm=intel XXXXX.c -o XXXXX_intel_OK.s -fno-asynchronous-unwind-tables
  389 "/usr/include/features.h" 2 3 4
  28 "/usr/include/stdio.h" 2 3 4
 ……………………………….
-
+```
 將組合語言程式碼轉成機器可以執行的指令(instructions)
 每一個組語語句都對應一機器指令。
 組譯器的組譯過程相對於編譯器來講比較簡單
