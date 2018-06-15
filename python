@@ -1,6 +1,6 @@
 
 
-#] 輸入與輸出:
+# [1]輸入與輸出 :
 
 # [1.1]輸入:input 
 ```
@@ -17,8 +17,12 @@ area = radius * radius * 3.1415962
  Output(輸出):Display results
 print("The area for the circle of radius", radius, "is", area)
 ```
-#
-python3 a1.py
+# python3 a1.py
+```
+Enter a number for radius: 12
+The area for the circle of radius 12 is 452.38985279999997
+
+```
 
 
 
