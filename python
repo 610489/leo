@@ -1,12 +1,6 @@
 
 
-# C程式編譯組譯與逆向(反編譯)
-# C語言程式編譯與組譯
-
-
-
-
-
+#] 輸入與輸出:
 
 # [1.1]輸入:input 
 ```
@@ -23,3 +17,42 @@ area = radius * radius * 3.1415962
  Output(輸出):Display results
 print("The area for the circle of radius", radius, "is", area)
 ```
+#
+python3 a1.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
