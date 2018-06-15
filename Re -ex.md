@@ -13,14 +13,14 @@ int main()
 ```
 【推薦好書】程式設計師的自我修養：連結、載入、程式
 
-##預處理階段
+## 預處理階段
 ```
 
 gcc –E XXX.c –o XXX.i (查看XXX.i的架構)
 #編譯階段
 gcc –S XXX.i  –o XXX.s(查看XXX.s的架構)
 ```
-##組譯階段
+## 組譯階段
 
 gcc –c XXX.s –o XXX.o(查看XXX.o的架構)
 ```
@@ -52,7 +52,7 @@ gcc –c XXX.s –o XXX.o(查看XXX.o的架構)
 ```
 
 
-##連結階段
+## 連結階段
 gcc  XXX.o –o XXX(產生的可執行檔)
 
 
@@ -71,7 +71,7 @@ gcc  XXX.o –o XXX(產生的可執行檔)
 
 
 
-##組譯過程
+## 組譯過程
 ```
  1 "helloCTFer.c"
  1 "<built-in>"
