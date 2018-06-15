@@ -1,5 +1,5 @@
-## 輸入與輸出
-# 輸入:input 
+# 輸入與輸出
+## 輸入:input 
 ```
 #!/usr/bin/env python
 #coding=utf-8
@@ -42,7 +42,7 @@ average = (number1 + number2 + number3) / 3
 # Display result
 print("The average of", number1, number2, number3, "is", average)
 ```
-# 格式化輸出
+## 格式化輸出
 方法1:使用format()
 "{0} love {1}......{2}".format("I","listening","classical Music")
 方法2:使用%
